@@ -1,0 +1,25 @@
+[user]
+  email = sdtwigg@eecs.berkeley.edu
+  name = Stephen Twigg
+
+[alias]
+#  xstatus="!cbxgit-status.sh"
+#  xadd="!cbxgit-add.sh"
+  xlogall = "log --graph --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%d%Creset' --abbrev-commit --date=relative"
+  xlog = "!git xlogall -n 10"
+#  xlog="!cbxgit-log.sh"
+#  xlogr="!cbxgit-log.sh -r"
+#  xfork="!cbxgit-fork.sh"
+#  xfork-merge="!cbxgit-fork-merge.sh"
+#  xrecursive="!cbxgit-recursive.sh"
+  xpull="pull --rebase"
+  xdiff="diff --word-diff=color"
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+	excludesfile = /home/eecs/sdtwigg/.gitignore
+[push]
+	default = matching
